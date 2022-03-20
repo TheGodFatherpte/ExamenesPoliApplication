@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServletCliente</servlet-name>
+        <servlet-class>Servlet.ServletCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValidarCliente</servlet-name>
+        <servlet-class>Servlet.ValidarCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletRegistroClientes</servlet-name>
+        <servlet-class>Servlet.ServletRegistroClientes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletCliente</servlet-name>
+        <url-pattern>/ServletCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidarCliente</servlet-name>
+        <url-pattern>/ValidarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRegistroClientes</servlet-name>
+        <url-pattern>/ServletRegistroClientes</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>Login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
